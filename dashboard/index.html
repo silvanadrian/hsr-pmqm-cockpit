@@ -22,19 +22,22 @@
                   <h2>Berichtsdatum: 23. November 2016</h2>
                   <br>
                     <section class="section">
+                      <!-- First Row -->
                         <div class="row sameheight-container">
+
+                            <!-- Projekt -->
                             <div class="col col-md-5 stats-col">
-                              <!-- Projekt -->
                                 <div class="card sameheight-item stats" data-exclude="xs">
 
                                     <div class="card-block">
                                         <div class="title-block">
                                             <h4 class="title">Projekt</h4>
+                                        </div>
                                             <table class="table">
                                                 <tbody>
                                                     <tr>
                                                         <th scope="row">Projektname</th>
-                                                        <td>Fish Project</td>
+                                                        <td>Fish Project?!</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">Projektkürzel</th>
@@ -50,17 +53,20 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                        </div>
+
 
                                     </div>
                                 </div>
-                              <!-- Projekt -->  
+
                             </div>
-                            <div class="col col-xs-12 col-sm-12 col-md-6 col-xl-7 history-col">
+                            <!-- Projekt -->
+
+                            <!-- History for now -->
+                            <div class="col col-xs-12 col-md-7">
                                 <div class="card sameheight-item" data-exclude="xs">
                                     <div class="card-header card-header-sm bordered">
                                         <div class="header-block">
-                                            <h3 class="title">History</h3> </div>
+                                            <h3 class="title">Status</h3> </div>
                                         <ul class="nav nav-tabs pull-right" role="tablist">
                                             <li class="nav-item"> <a class="nav-link active" href="#visits" role="tab" data-toggle="tab">Visits</a> </li>
                                             <li class="nav-item"> <a class="nav-link" href="#downloads" role="tab" data-toggle="tab">Downloads</a> </li>
@@ -80,70 +86,86 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- History -->
                         </div>
+                        <!-- First Row -->
+
+                        <!-- Second Row -->
+                        <div class="row sameheight-container">
+                          <div class="col col-xs-12 col-md-6">
+                            <div class="card sameheight-item" data-exclude="xs">
+                                <div class="card-header card-header-sm bordered">
+                                    <div class="header-block">
+                                        <h3 class="title">Meilensteine</h3> </div>
+                                </div>
+                                <div class="card-block">
+
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col col-xs-12 col-md-6">
+                            <div class="card sameheight-item" data-exclude="xs">
+                                <div class="card-header card-header-sm bordered">
+                                    <div class="header-block">
+                                        <h3 class="title">Finanzen</h3> </div>
+                                </div>
+                                <div class="card-block">
+
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Second Row -->
+
+                        <!-- Third Row -->
+                        <div class="row sameheight-container">
+                          <div class="col col-xs-12 col-md-6">
+                            <div class="card sameheight-item" data-exclude="xs">
+                                <div class="card-header card-header-sm bordered">
+                                    <div class="header-block">
+                                        <h3 class="title">Earned Value</h3> </div>
+                                </div>
+                                <div class="card-block">
+
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col col-xs-12 col-md-6">
+                            <div class="card sameheight-item" data-exclude="xs">
+                                <div class="card-header card-header-sm bordered">
+                                    <div class="header-block">
+                                        <h3 class="title">Finanzen</h3> </div>
+                                </div>
+                                <div class="card-block">
+
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Third Row -->
+
+                        <!-- Third Row -->
+                        <div class="row sameheight-container">
+                          <div class="col col-xs-12 col-md-12">
+                            <div class="card sameheight-item" data-exclude="xs">
+                                <div class="card-header card-header-sm bordered">
+                                    <div class="header-block">
+                                        <h3 class="title">Risiken</h3> </div>
+                                </div>
+                                <div class="card-block">
+
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Third Row -->
+
                     </section>
 
 
                 </article>
 
 
-
-                <div class="modal fade" id="modal-media">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-    					<span aria-hidden="true">&times;</span>
-    					<span class="sr-only">Close</span>
-    				</button>
-                                <h4 class="modal-title">Media Library</h4> </div>
-                            <div class="modal-body modal-tab-container">
-                                <ul class="nav nav-tabs modal-tabs" role="tablist">
-                                    <li class="nav-item"> <a class="nav-link" href="#gallery" data-toggle="tab" role="tab">Gallery</a> </li>
-                                    <li class="nav-item"> <a class="nav-link active" href="#upload" data-toggle="tab" role="tab">Upload</a> </li>
-                                </ul>
-                                <div class="tab-content modal-tab-content">
-                                    <div class="tab-pane fade" id="gallery" role="tabpanel">
-                                        <div class="images-container">
-                                            <div class="row"> </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade active in" id="upload" role="tabpanel">
-                                        <div class="upload-container">
-                                            <div id="dropzone">
-                                                <form action="/" method="POST" enctype="multipart/form-data" class="dropzone needsclick dz-clickable" id="demo-upload">
-                                                    <div class="dz-message-block">
-                                                        <div class="dz-message needsclick"> Drop files here or click to upload. </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer"> <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary">Insert Selected</button> </div>
-                        </div>
-                        <!-- /.modal-content -->
-                    </div>
-                    <!-- /.modal-dialog -->
-                </div>
-                <!-- /.modal -->
-                <div class="modal fade" id="confirm-modal">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-    					<span aria-hidden="true">&times;</span>
-    				</button>
-                                <h4 class="modal-title"><i class="fa fa-warning"></i> Alert</h4> </div>
-                            <div class="modal-body">
-                                <p>Are you sure want to do this?</p>
-                            </div>
-                            <div class="modal-footer"> <button type="button" class="btn btn-primary" data-dismiss="modal">Yes</button> <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button> </div>
-                        </div>
-                        <!-- /.modal-content -->
-                    </div>
-                    <!-- /.modal-dialog -->
-                </div>
-                <!-- /.modal -->
             </div>
         </div>
         <!-- Reference block for JS -->
