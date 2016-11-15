@@ -22,6 +22,33 @@
                   <h2>Berichtsdatum: 23. November 2016</h2>
                   <br>
                     <section class="section">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-6">
+                                <div class="card card-inverse card-success">
+                                    <div class="card-block bg-info">
+                                        <h6 class="text-uppercase">Übrige Arbeitstage</h6>
+                                        <h1 class="display-3">66</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-6">
+                                <div class="card card-inverse card-danger">
+                                    <div class="card-block bg-info">
+                                        <h6 class="text-uppercase">Projektstart</h6>
+                                        <h1 class="display-3">20.01.2016</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-6">
+                                <div class="card card-inverse card-info">
+                                    <div class="card-block bg-info">
+                                        <h6 class="text-uppercase">Geplantes Projektende</h6>
+                                        <h1 class="display-3">30.03.2017</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                       <!-- First Row -->
                         <div class="row sameheight-container">
 
@@ -49,7 +76,7 @@
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">Projektmitarbeiter</th>
-                                                        <td><ul><li>Silvan Adrian</li><li>Fabian Binna</li><li>Pascal Kistler</li><li>David Meister</li></ul></td>
+                                                        <td><ul class="list-unstyled"><li>Silvan Adrian</li><li>Fabian Binna</li><li>Pascal Kistler</li><li>David Meister</li></ul></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -144,21 +171,160 @@
                         </div>
                         <!-- Third Row -->
 
-                        <!-- Third Row -->
+                        <!-- Risiken -->
                         <div class="row sameheight-container">
                           <div class="col col-xs-12 col-md-12">
-                            <div class="card sameheight-item" data-exclude="xs">
+                            <div class="card sameheight-item" style="float:left;" data-exclude="xs">
                                 <div class="card-header card-header-sm bordered">
                                     <div class="header-block">
                                         <h3 class="title">Risiken</h3> </div>
                                 </div>
                                 <div class="card-block">
+                                    <div class="col-xs-12 col-md-12 col-lg-6">
+                                        <table class="table table-bordered table-striped risk-table">
+                                            <tbody>
+                                            <tr>
+                                                <td rowspan="6" style="width:20px; padding-top:250px;"><div style="width:20px;transform: rotate(-90deg); text-align:center;">Eintrittswahrscheinlichkeit</div></td>
+                                                <td>sehr hoch</td>
+                                                <td class="bg-warning"></td>
+                                                <td class="bg-warning"></td>
+                                                <td class="bg-danger"></td>
+                                                <td class="bg-danger"></td>
+                                                <td class="bg-danger"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>hoch</td>
+                                                <td class="bg-warning"></td>
+                                                <td class="bg-warning"></td>
+                                                <td class="bg-warning"></td>
+                                                <td class="bg-danger">
+                                                    <span class="fa-stack fa-lg">
+                                                      <i class="fa fa-circle circle-danger fa-stack-2x"></i>
+                                                      <i class="fa fa-inverse fa-stack-1x">1</i>
+                                                    </span>
+                                                </td>
+                                                <td class="bg-danger"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>mittel</td>
+                                                <td class="bg-success"></td>
+                                                <td class="bg-warning">
+                                                    <span class="fa-stack fa-lg">
+                                                      <i class="fa fa-circle circle-warning fa-stack-2x"></i>
+                                                      <i class="fa fa-inverse fa-stack-1x">2</i>
+                                                    </span>
+                                                </td>
+                                                <td class="bg-warning"></td>
+                                                <td class="bg-warning"></td>
+                                                <td class="bg-danger"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>gering</td>
+                                                <td class="bg-success"></td>
+                                                <td class="bg-success"></td>
+                                                <td class="bg-warning"></td>
+                                                <td class="bg-warning"></td>
+                                                <td class="bg-warning"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>sehr gering</td>
+                                                <td class="bg-success"></td>
+                                                <td class="bg-success">
+                                                    <span class="fa-stack fa-lg">
+                                                      <i class="fa fa-circle circle-success fa-stack-2x"></i>
+                                                      <i class="fa fa-inverse fa-stack-1x">3</i>
+                                                    </span>
+                                                </td>
+                                                <td class="bg-success"></td>
+                                                <td class="bg-warning"></td>
+                                                <td class="bg-warning"></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td></td>
+                                                <td>sehr gering</td>
+                                                <td>gering</td>
+                                                <td>mittel</td>
+                                                <td>hoch</td>
+                                                <td>sehr hoch</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td colspan="7" style="height:40px;text-align:center;">
+                                                    Schadenshöhe
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="col-xs-12 col-md-12 col-lg-6">
+                                        <table class="table risks table-bordered table-hover table-striped">
+                                            <tbody>
+                                            <tr>
+                                                <td style="width:50px;">Nr.</td>
+                                                <td>Risiko</td>
+                                                <td>Wahrscheinlichkeit</td>
+                                                <td>Schaden</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <span class="fa-stack fa-lg">
+                                                      <i class="fa fa-circle circle-danger fa-stack-2x"></i>
+                                                      <i class="fa fa-inverse fa-stack-1x">1</i>
+                                                    </span>
+                                                </td>
+                                                <td style="vertical-align: middle;"></td>
+                                                <td style="vertical-align: middle;"></td>
+                                                <td style="vertical-align: middle;"></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td></td>
+                                                <td colspan="3">
+                                                    <b>Kommentar:</b>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="fa-stack fa-lg">
+                                                      <i class="fa fa-circle circle-warning fa-stack-2x"></i>
+                                                      <i class="fa fa-inverse fa-stack-1x">2</i>
+                                                    </span>
+                                                </td>
+                                                <td style="vertical-align: middle;"></td>
+                                                <td style="vertical-align: middle;"></td>
+                                                <td style="vertical-align: middle;"></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td></td>
+                                                <td colspan="3">
+                                                    <b>Kommentar:</b>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="fa-stack fa-lg">
+                                                      <i class="fa fa-circle circle-success fa-stack-2x"></i>
+                                                      <i class="fa fa-inverse fa-stack-1x">3</i>
+                                                    </span>
+                                                </td>
+                                                <td style="vertical-align: middle;"></td>
+                                                <td style="vertical-align: middle;"></td>
+                                                <td style="vertical-align: middle;"></td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
 
                                 </div>
                             </div>
                           </div>
                         </div>
-                        <!-- Third Row -->
+                        <!-- Risiken -->
 
                     </section>
 

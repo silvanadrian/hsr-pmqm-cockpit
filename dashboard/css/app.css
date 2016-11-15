@@ -26,7 +26,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #4f5f6f;
   overflow-x: hidden; }
-
+.fa-stack-2x {
+  color:#4f5f6f;
+}
 .main-wrapper {
   width: 100%;
   position: absolute;
