@@ -151,11 +151,11 @@
                             <div class="card sameheight-item" data-exclude="xs">
                               <table class="table table-hover">
                       					  <tr>
-                      					    <th>Milestone</th>
-                      					    <th>Begin</th>
-                      					    <th>End</th>
-                      					    <th>Effective End</th>
-                      					    <th>Difference</th>
+                      					    <th>Meilenstrein</th>
+                      					    <th>Beginn</th>
+                      					    <th>Ende</th>
+                      					    <th>Effektives Ende</th>
+                      					    <th>Differenz</th>
                       					  </tr>
                       					  <tr>
                       					    <td>MS1-Inception</td>
@@ -211,14 +211,12 @@
 
                                 </div>
                                 <div class="card-block">
-                                  Y : Million CHF
+                                  Y : Kosten (kCHF)
                                   <div id="finance" style="width:580px;height:300px"></div>
-                                  X : Duration in Months
-                                  <i>
-                                  <i class="fa-square" style="background-color: green;color: green"></i> Budget
-                                  <i class="fa-square" style="background-color: #f8e8ad;color: #f8e8ad"></i> Estimated
-                                  <i class="fa-square" style="background-color: #b1d8fb;color: #b1d8fb"></i> Costs
-                                  <i class="fa-square" style="background-color: red;color: red"></i> Moving average
+                                  X : Dauer (Monate)
+                                  <i style="margin-left: 20px;">
+                                  <i class="fa-square" style="background-color: #f8e8ad;color: #f8e8ad"></i> Budget
+                                  <i class="fa-square" style="background-color: #b1d8fb;color: #b1d8fb"></i> Kosten
                                   </i>
                                 </div>
                             </div>
@@ -507,6 +505,22 @@
                                             <p class="bg-success">120'000</p>
                                           </td>
                                         </tr>
+                                        <tr>
+                                          <td>
+                                            MS5
+                                          </td>
+                                          <td>
+                                            50'000
+                                          </td>
+                                          <td>
+                                            0%
+                                          </td>
+                                          <td>
+                                            0%
+                                          </td>
+                                          <td>
+                                          </td>
+                                        </tr>
 
                                     </table>
                                 </div>
@@ -537,20 +551,9 @@
         <script src="js/meilensteine.js"></script>
         <script type="text/javascript">
             $(function () {
-                var finance_est = [[0, 1.5], [1, 1.75], [2, 2.5], [3, 3.5], [4, 3.75], [5, 4], [6, 4.75], [7, 6], [8, 7], [9, 8], [10, 9], [11, 9.5], [12, 10], [13, 10.25]];
+                var finance_est = [[0, 50], [1, 80], [2, 115], [3, 150], [4, 170], [5, 185], [6, 200], [7, 240], [8, 280], [9, 320], [10, 360], [11, 400], [12, 425], [13, 450]];
 
-                var finance_costs = [[0, 1], [1, 1.5], [2, 2.5], [3, 3], [4, 3.25], [5, 3.5], [6, 4], [7, 5], [8, 6], [9, 7], [10, 8], [11, 8.5], [12, 8.75], [13, 9]];
-
-                var finance_budget = [];
-                for (var i = 0; i <= 4; i ++)
-                    finance_budget.push([i, 4.5]);
-                for (var i = 4; i <= 14; i ++)
-                    finance_budget.push([i, 11]);
-
-                var finance_average = [];
-                for(var i = 0; i<14; i++)
-                    //var avg = finance_est[i][1];
-                    finance_average.push([i, ((finance_est[i][1])+(finance_costs[i][1]))/2]);
+                var finance_costs = [[0, 50], [1, 85], [2, 120], [3, 145], [4, 190], [5, 205], [6, 220], [7, 240], [8, 270], [9, 300], [10, 0], [11, 0], [12, 0], [13, 0]];
 
                 $.plot($("#finance"), [
                     {
@@ -560,14 +563,6 @@
                     {
                         data: finance_costs,
                         bars: { show: true }
-                    },
-                    {
-                        data: finance_average,
-                        lines: { show: true }
-                    },
-                    {
-                        data: finance_budget,
-                        lines: { show: true, steps: true }
                     }
                 ]);
             });
